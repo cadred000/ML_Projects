@@ -1,0 +1,3 @@
+# Machine Model Training
+
+This project involves building a machine learning model to classify CGM time series data as either “meal” or “no meal” events. Meal events are identified from InsulinData.csv using carbohydrate intake entries, and CGM data is extracted in a 2.5-hour window centered on the meal time. No meal data is collected in 2-hour windows that are at least 2 hours away from any meal event. After handling missing data, features are extracted from both meal and no meal segments and used to train a classifier. The model is evaluated with k-fold cross-validation and saved using Python’s pickle module. A separate script predicts new samples from test.csv, outputting results as a binary vector in Result.csv.

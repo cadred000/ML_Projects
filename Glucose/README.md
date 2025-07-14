@@ -1,0 +1,3 @@
+# Extracting Time Series Properties of Glucose Levels in Artificial Pancreas Data
+
+This project analyzes time-series data from continuous glucose monitors (CGM) and insulin pumps to extract daily glucose control metrics for both manual and auto insulin delivery modes. It computes the percentage of time glucose levels fall within clinically defined ranges (e.g., hyperglycemia, normoglycemia, hypoglycemia) across three time intervals: daytime (6 am–midnight), overnight (midnight–6 am), and the full day. Data is first segmented by day, and missing CGM readings are handled appropriately. The mode switch is detected from insulin pump logs, and metrics are calculated separately before and after the transition to auto mode. Final results are output as a CSV summary.
